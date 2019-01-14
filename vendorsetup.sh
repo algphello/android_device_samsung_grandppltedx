@@ -1,1 +1,1 @@
-add_lunch_combo lineage_grandppltedx-userdebug
+add_lunch_combo lineage_grandpplteser-userdebug

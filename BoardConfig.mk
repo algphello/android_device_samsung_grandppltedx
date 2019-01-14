@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/grandppltedx
+DEVICE_PATH := device/samsung/grandpplteser
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -95,7 +95,7 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 BOARD_GPS_LIBRARIES := true
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/grandppltedx/ril
+BOARD_RIL_CLASS := ../../../device/samsung/grandpplteser/ril
 
 # Wifi
 BOARD_WLAN_DEVICE := MediaTek
@@ -116,7 +116,7 @@ WIFI_DRIVER_STATE_OFF := 0
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_KERNEL_IMAGE_NAME := zImage
 
-TARGET_KERNEL_SOURCE  := kernel/samsung/grandppltedx
+TARGET_KERNEL_SOURCE  := kernel/samsung/grandpplteser
 TARGET_KERNEL_CONFIG  := mt6737t-grandpplte-lineage_defconfig
 
 BOARD_KERNEL_CMDLINE  := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
@@ -145,7 +145,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # testing
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := grandpplte,grandppltedx
+TARGET_OTA_ASSERT_DEVICE := grandpplte,grandpplteser
 
 # Inherit from mt6735-common
 #FORCE_32_BIT := true

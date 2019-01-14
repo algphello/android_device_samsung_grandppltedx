@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_grandppltedx.mk \
+    $(LOCAL_DIR)/full_grandpplteser.mk \
     $(LOCAL_DIR)/lineage.mk

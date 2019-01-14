@@ -25,13 +25,13 @@ TARGET_SCREEN_WIDTH := 540
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/grandppltedx/full_grandppltedx.mk)
+$(call inherit-product, device/samsung/grandpplteser/full_grandpplteser.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := grandppltedx
-PRODUCT_NAME := lineage_grandppltedx
+PRODUCT_DEVICE := grandpplteser
+PRODUCT_NAME := lineage_grandpplteser
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-G532G
+PRODUCT_MODEL := SM-G532F
 
 # Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SM-G532G TARGET_DEVICE=SM-G532G BUILD_FINGERPRINT=samsung/grandppltedx/grandpplte:6.0.1/MMB29T/G532GDXU1AQF3:user/release-keys PRIVATE_BUILD_DESC="grandppltedx-user 6.0.1 MMB29T G532GDXU1AQF3 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SM-G532G TARGET_DEVICE=SM-G532G BUILD_FINGERPRINT=samsung/grandpplteser/grandpplte:6.0.1/MMB29T/G532FDXU1AQF3:user/release-keys PRIVATE_BUILD_DESC="grandpplteser-user 6.0.1 MMB29T G532FDXU1AQF3 release-keys"

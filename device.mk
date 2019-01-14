@@ -14,21 +14,21 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/grandppltedx
-VENDOR_PATH := vendor/samsung/grandppltedx
+DEVICE_PATH := device/samsung/grandpplteser
+VENDOR_PATH := vendor/samsung/grandpplteser
 
 # Explain: audio policy service is loaded before manager AND NEED IT
 # make fails
 # tempo fix. 
 # TODO: Better solution?
-$(shell (mkdir -p out/target/product/grandppltedx/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates))
-$(shell (mkdir -p out/target/product/grandppltedx/obj/lib))
-$(shell (cp device/samsung/grandppltedx/dummy out/target/product/grandppltedx/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates/export_includes))
-$(shell (cp vendor/samsung/grandppltedx/proprietary/system/lib/libaudiopolicymanager.so out/target/product/grandppltedx/obj/lib/libaudiopolicymanager.so))
+$(shell (mkdir -p out/target/product/grandpplteser/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates))
+$(shell (mkdir -p out/target/product/grandpplteser/obj/lib))
+$(shell (cp device/samsung/grandpplteser/dummy out/target/product/grandpplteser/obj/SHARED_LIBRARIES/libaudiopolicymanager_intermediates/export_includes))
+$(shell (cp vendor/samsung/grandpplteser/proprietary/system/lib/libaudiopolicymanager.so out/target/product/grandpplteser/obj/lib/libaudiopolicymanager.so))
 
 # install-recovery.sh too. is not copied correctly!
-$(shell (mkdir -p out/target/product/grandppltedx/ota_temp/SYSTEM/bin))
-$(shell (cp vendor/samsung/grandppltedx/proprietary/system/bin/install-recovery.sh out/target/product/grandppltedx/ota_temp/SYSTEM/bin/install-recovery.sh))
+$(shell (mkdir -p out/target/product/grandpplteser/ota_temp/SYSTEM/bin))
+$(shell (cp vendor/samsung/grandpplteser/proprietary/system/bin/install-recovery.sh out/target/product/grandpplteser/ota_temp/SYSTEM/bin/install-recovery.sh))
 
 
 
@@ -180,4 +180,4 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	persist.sys.usb.config=mtp
 
 # Vendor
-$(call inherit-product-if-exists, vendor/samsung/grandppltedx/grandppltedx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/grandpplteser/grandpplteser-vendor.mk)

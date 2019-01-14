@@ -24,7 +24,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-ifeq ($(TARGET_DEVICE),grandppltedx)
+ifeq ($(TARGET_DEVICE),grandpplteser)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
