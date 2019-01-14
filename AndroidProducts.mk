@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_PATH)/omni_grandpplte.mk \
+    $(LOCAL_DIR)/omni_grandpplte.mk \
     $(LOCAL_DIR)/full_grandpplteser.mk \
     $(LOCAL_DIR)/lineage.mk
